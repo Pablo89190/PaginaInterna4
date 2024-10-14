@@ -1,0 +1,182 @@
+/* Reset básico para eliminar márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño del fondo */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Centrar la imagen */
+}
+
+/* Estilos del encabezado con parte superior roja y parte inferior blanca */
+header {
+    background: linear-gradient(to bottom, #CC3232 50%, white 50%); /* Gradiente vertical, mitad rojo y mitad blanco */
+    height: 150px; /* Altura del encabezado */
+    position: relative;
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; /* Distribuir elementos a los lados */
+    padding: 0 20px; /* Espaciado interno a los lados */
+}
+
+/* Logo más grande posicionado en la esquina izquierda */
+.logo {
+    width: 250px; /* Tamaño del logo */
+    height: auto; /* Mantener proporciones */
+}
+
+/* Estilos para la barra de búsqueda desde Illustrator */
+.search-element {
+    height: 20px; /* Ajusta la altura a un tamaño más grande */
+    width: 20px; /* Ajusta el ancho a un tamaño específico */
+}
+
+/* Estilos para el botón de imagen */
+.search-button {
+    border: none; /* Sin borde para el botón */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    padding: 0; /* Sin relleno */
+    margin-left: auto; /* Empujar el botón a la derecha */
+    margin-right: 50px; /* Espacio entre la imagen y el borde derecho */
+    margin-top: -80px; /* Ajusta este valor para elevar la barra de búsqueda */
+}
+
+.search-button img {
+    display: block; /* Asegura que la imagen no tenga espacio alrededor */
+    height: 35px; /* Ajusta la altura de la imagen del botón */
+    width: 650px; /* Mantener proporciones */
+    transition: transform 0.3s; /* Efecto de hover */
+}
+
+.icon-button {
+    border: none; /* Sin borde para el botón */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    padding: 0; /* Sin relleno */
+    margin-left: 5px; /* Espacio entre la barra de búsqueda y los íconos */
+    margin-right: 20px;
+    margin-top: -80px;
+}
+
+.icon {
+    height: 35px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantener proporciones */
+    transition: transform 0.3s; /* Efecto de hover */
+}
+
+.icon-button:hover .icon {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el mouse */
+}
+
+/* Estilos para el nuevo ícono en la parte inferior derecha */
+.bottom-icon-button {
+    border: none; /* Sin borde para el botón */
+    background: none; /* Sin fondo */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 10px; /* Espacio desde la parte inferior del encabezado */
+    right: 25px; /* Espacio desde el borde derecho */
+    padding: 0; /* Sin relleno */
+}
+
+.bottom-icon {
+    height: 45px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantener proporciones */
+    transition: transform 0.3s; /* Efecto de hover */
+}
+
+.bottom-icon-button:hover .bottom-icon {
+    transform: scale(1.1); /* Aumenta el tamaño del icono al pasar el mouse */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 10px;
+    background-color: #CC3232; /* Color del pie de página */
+    color: white;
+    margin-top: 20px;
+    position: relative; /* Para permitir posicionamiento absoluto si es necesario */
+}
+
+/* Contenedor para el contenido del pie de página */
+.footer-content {
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    align-items: center; /* Alinear verticalmente */
+}
+
+/* Estilos para la imagen de redes sociales */
+.social-media-icon {
+    width: 300px; /* Ajusta la anchura de la imagen de redes sociales */
+    height: auto; /* Mantener proporciones */
+    margin-right: 330px; /* Espacio entre la imagen y el texto */
+    margin-left: 50px;
+	vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+
+/* Estilos del contenido principal */
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Espacio entre secciones y la barra lateral */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 30%; /* Tamaño de cada sección */
+    text-align: center;
+}
+
+.sidebar {
+    width: 20%; /* Ancho de la barra lateral */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Sin relleno en la lista */
+}
+
+.sidebar li {
+    margin: 10px 0; /* Espacio vertical entre botones */
+}
+
+.sidebar a {
+    display: block; /* Hacer que el enlace ocupe todo el espacio del li */
+    padding: 10px;
+    background-color: #CC7676; /* Color de los botones */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #A14F4F; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos del contenido inferior */
+.main-content-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section h2 {
+    color: #333;
+}
+
+.section p {
+    color: #666;
+}
+
